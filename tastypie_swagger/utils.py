@@ -10,7 +10,7 @@ def trailing_slash_or_none():
     """
     Return a slash or empty string based on tastypie setting
     """
-    if getattr(settings, 'TASTYPIE_ALLOW_MISSING_SLASH', True):
+    if getattr(settings, 'TASTYPIE_ALLOW_MISSING_SLASH', False):
         return ''
     return '/'
 
